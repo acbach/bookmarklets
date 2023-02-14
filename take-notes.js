@@ -22,7 +22,7 @@ javascript: (async function () {
       await sleep();
       generating = isGenerating();
     }
-    const promptForChatGPT = "Create notes for the following paper using a bulletlist.\nText section from paper:" + chunks[index].replace(/(\r\n|\n|\r)/gm, "");
+    const promptForChatGPT = "Create notes for the following paper using a bulletlist.\nText section from paper: " + chunks[index].replace(/(\r\n|\n|\r)/gm, " ");
     const element = document.querySelectorAll(".resize-none")[0];
     await sleep(1000);
     element.value = promptForChatGPT;
