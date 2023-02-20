@@ -1,7 +1,7 @@
 javascript: (async function () {
   const text = prompt("Insert your document text here");
   console.log("text", text);
-  const chunks = text.match(/.{1,10000}/gs);
+  const chunks = text.match(/.{1,16500}/gs);
   console.log(chunks);
   function isGenerating() {
     return document.querySelectorAll(".absolute.p-1")[0].innerHTML.indexOf('<div class="text-2xl"><span') > -1;
