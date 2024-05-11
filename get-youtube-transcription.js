@@ -1,6 +1,6 @@
 javascript: (async function () {
     // Select the div by ID
-    const div = document.getElementById("segments-container")
+    const div = document.getElementById("segments-container");
 
     // Check if the div exists
     if (div) {
